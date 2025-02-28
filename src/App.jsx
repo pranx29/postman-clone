@@ -6,7 +6,7 @@ import Params from "./Params";
 import Headers from "./Headers";
 import Response from "./Response";
 import { useState } from "react";
-import api from "./js/api";
+import axios from "./js/axios";
 
 function App() {
     const [tab, setTab] = useState(REQUEST_TABS.PARAMS);
@@ -195,7 +195,7 @@ function App() {
     };
 
     const handleSendClick = () => {
-        api({
+        axios({
             url: parseUrl(url).baseUrl,
             method: method,
             params: params.reduce((data, param) => {

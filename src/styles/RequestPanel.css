@@ -25,7 +25,7 @@
     transition: all 0.1s ease-in-out;
     appearance: none;
     padding-right: 2.5rem;
-    background: url("/src/assets/custom-arrow.svg") no-repeat right 0.75rem
+    background: url("/src/assets/icons/custom-arrow.svg") no-repeat right 0.75rem
         center;
     font-weight: 500;
 }
