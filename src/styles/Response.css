@@ -1,0 +1,119 @@
+.response-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 0.25rem 1rem;
+    height: 100%;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.response-header h3 {
+    margin: 0;
+    font-size: 0.75rem;
+    padding: 0.75rem 0rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.response-details {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.response-status {
+    padding: 0.25em 0.5em;
+    border-radius: 0.25rem;
+}
+
+.response-status.success {
+    background-color: hsl(120, 100%, 95%);
+    color: hsl(120, 100%, 25%);
+}
+
+.response-status.error {
+    background-color: hsl(0, 100%, 95%);
+    color: hsl(0, 100%, 25%);
+}
+
+.seperator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--input-border);
+}
+
+.response-body {
+    overflow: auto;
+    height: 100%;
+}
+
+.response-info {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.response-info > img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.response-info .response-message {
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.response-info .response-error {
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-align: center;
+    background-color: hsl(0, 100%, 95%);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.response-data {
+    margin-top: 1rem;
+    overflow: auto;
+    height: 100%;
+}
+
+.response-header table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.response-header th {
+    height: 34px;
+    text-align: left;
+    font-size: 0.75rem;
+    border: 1px solid var(--input-border);
+    padding: 0.25rem;
+    font-weight: 500;
+}
+
+.response-header td {
+    height: 34px;
+    text-align: left;
+    font-size: 0.75rem;
+    border: 1px solid var(--input-border);
+    padding: 0.25rem;
+}
+
+.response-header tbody tr:hover {
+    background-color: var(--secondary-bg);
+}

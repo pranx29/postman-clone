@@ -1,0 +1,106 @@
+.params {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 0.25rem;
+}
+.params-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.params-header h4 {
+    margin: 0;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.params-table th,
+.params-table td {
+    height: 34px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid var(--input-border);
+    padding: 0.25rem;
+}
+
+.params-table .params-input {
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    background-color: transparent;
+}
+
+.params-table .params-input::placeholder {
+    font-weight: 300;
+}
+
+.params-table .params-input:focus {
+    outline: 1px solid var(--input-border);
+    background-color: var(--primary-bg);
+}
+
+.params-table tr:has(.params-input:focus) {
+    background-color: var(--secondary-bg);
+    
+}
+
+.params-table .checkbox-td{
+    width: 40px;
+}
+
+.params-table .params-checkbox {
+    margin: 0;
+    width: 100%;
+    height: 70%;
+    border: 1px solid var(--border-color);
+    accent-color: var(--secondary-text-color);
+}
+
+.params-table tbody tr {
+    position: relative;
+}
+
+.params-table .delete-td{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.params-table tbody tr:hover .params-delete-btn {
+    display: block;
+}
+
+.params-table tr:has(.params-input:focus) .params-delete-btn {
+    display: none;
+}
+
+.params-table .params-delete-btn {
+    display: none;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.params-table .params-delete-btn:hover {
+    background-color: var(--input-border);
+}
+
+.params-table .params-delete-btn svg {
+    fill: var(--text-color);
+}
+
+.params-table .params-delete-btn:hover svg {
+    fill: var(--secondary-text-color);
+}

@@ -1,0 +1,18 @@
+.tab-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-container .tab-button {
+    background-color: var(--primary-bg);
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.tab-container .tab-button.active {
+    border-bottom: 1px solid var(--tab-active);
+    color: var(--secondary-text-color);
+}
